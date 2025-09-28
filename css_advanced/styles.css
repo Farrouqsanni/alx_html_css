@@ -1,0 +1,89 @@
+/* =======================
+   GLOBAL STYLES
+======================= */
+:root {
+  --color-primary: #0d1b2a;   /* Header background (from Figma) */
+  --color-secondary: #ffffff; /* Text color */
+  --color-accent: #ff6600;    /* Button / link highlight */
+  --color-banner-bg: #f2f2f2; /* Banner background */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  line-height: 1.6;
+}
+
+/* =======================
+   HEADER
+======================= */
+header {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav ul li a:hover {
+  color: var(--color-accent);
+}
+
+/* =======================
+   HERO / BANNER
+======================= */
+.hero {
+  background-color: var(--color-banner-bg);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero .btn:hover {
+  background-color: #e65c00; /* darker shade of accent */
+}
