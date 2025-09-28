@@ -1,0 +1,41 @@
+/* Quotes Section */
+.quotes {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.quotes blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.quotes blockquote::before,
+.quotes blockquote::after {
+  content: '"';
+  font-size: 3rem;
+  color: #999;
+  position: absolute;
+}
+
+.quotes blockquote::before {
+  left: -20px;
+  top: -20px;
+}
+
+.quotes blockquote::after {
+  right: -20px;
+  bottom: -20px;
+}
+
+.quotes footer {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
