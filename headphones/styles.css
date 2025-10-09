@@ -1,0 +1,59 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Layout */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+  padding: 40px;
+}
+
+/* Header */
+header h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+header p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Hero Section */
+.hero {
+  margin: 40px auto;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.hero button {
+  background-color: #ff6565;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.hero button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #666;
+}
