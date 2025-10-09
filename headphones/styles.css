@@ -1,59 +1,88 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* General Layout */
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
-  text-align: center;
-  line-height: 1.6;
-  padding: 40px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #fff;
+    background-color: #000;
 }
 
-/* Header */
-header h1 {
-  font-size: 2.5rem;
-  color: #222;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
-header p {
-  color: #555;
-  margin-bottom: 20px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
 }
 
-/* Hero Section */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .hero {
-  margin: 40px auto;
+    background: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952') no-repeat center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
 }
 
-.hero button {
-  background-color: #ff6565;
-  color: #fff;
-  border: none;
-  padding: 12px 25px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
+.btn {
+    background-color: #e63946;
+    padding: 0.8em 1.5em;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-.hero button:hover {
-  opacity: 0.9;
+.section {
+    padding: 4em 0;
+    background-color: #111;
 }
 
-/* Footer */
-footer {
-  margin-top: 50px;
-  font-size: 0.9rem;
-  color: #666;
+.section.dark {
+    background-color: #222;
+}
+
+.stat-box {
+    background-color: #333;
+    padding: 1.5em;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+input, textarea {
+    width: 60%;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer {
+    padding: 1em;
+    background-color: #111;
 }

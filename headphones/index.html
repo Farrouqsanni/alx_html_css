@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Headphones Landing Page</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>🎧 Premium Headphones</h1>
-    <p>Experience pure sound like never before.</p>
-  </header>
+    <header class="hero">
+        <div class="container">
+            <nav class="navbar">
+                <h1 class="logo">Headphones</h1>
+                <ul class="nav-links">
+                    <li><a href="#what-we-do">What we do</a></li>
+                    <li><a href="#our-results">Our results</a></li>
+                    <li><a href="#contact-us">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h2>Experience the best sound quality</h2>
+                <p>Feel the music like never before.</p>
+                <a href="#contact-us" class="btn">Call to Action</a>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <section class="hero">
-      <h2>Feel the Music</h2>
-      <button>Shop Now</button>
+    <section id="what-we-do" class="section">
+        <div class="container">
+            <h2>What we do</h2>
+            <p>We design high-quality headphones that deliver premium sound and comfort.</p>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2025 Headphones Inc. All rights reserved.</p>
-  </footer>
+    <section id="our-results" class="section dark">
+        <div class="container">
+            <h2>Our results</h2>
+            <div class="stats">
+                <div class="stat-box"><h3>+10K</h3><p>Happy Customers</p></div>
+                <div class="stat-box"><h3>98%</h3><p>Satisfaction Rate</p></div>
+                <div class="stat-box"><h3>24/7</h3><p>Support</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="section">
+        <div class="container">
+            <h2>Contact us</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your message"></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Headphones Inc. All rights reserved.</p>
+    </footer>
 </body>
 </html>
