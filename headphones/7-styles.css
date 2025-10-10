@@ -1,0 +1,160 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.hero {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.cta-btn {
+    background-color: #ff6565;
+    border: none;
+    padding: 15px 30px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+}
+
+/* WHAT WE DO */
+.what-we-do {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.service {
+    max-width: 220px;
+    padding: 20px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 2s forwards;
+}
+
+.service:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.service:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.service:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.service:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* OUR RESULTS */
+.our-results {
+    background: #f7f7f7;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.results-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.pentagon {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    background: #ff6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    animation: bounce 3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.result-content h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.result-content p {
+    margin: 5px 0 0;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .results-cards, .services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
